@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <?php include "includes/head.php"; ?>
+    <?php include "includes/common_head.php"; ?>
 
     <body data-spy="scroll" data-offset="0" data-target="#navbar-main">
 
-        <?php include "includes/header.php"; ?>
+        <?php include "includes/common_header.php"; ?>
 
         <!-- ==== HEADERWRAP ==== -->
         <div id="headerwrap" name="home" id="home">
@@ -209,38 +209,73 @@
                     <h2 class="centered">NOTRE ÉQUIPE</h2>
                     <hr>
                     <div class="col-lg-3 centered"> <img class="img img-circle" src="img/team/default-user.png" height="120px" width="120px" alt="">
-                        <h4><strong>Jessica</strong></h4>
-                        <p>Fondatrice du club <span class="engineering-program">Génie électrique</span></p>
+                        <h4><strong>Marc-Antoine Meilleur</strong></h4>
+                        <p>Chargé des opérations<span class="engineering-program">Génie mécanique</span></p>
                         <a href="#"><i class="fa fa-linkedin"></i></a> </div>
                     <div class="col-lg-3 centered"> <img class="img img-circle" src="img/team/default-user.png" height="120px" width="120px" alt="">
-                        <h4><b>Mike</b></h4>
-                        <p>Fondateur du club <span class="engineering-program">Génie construction</span></p>
+                        <h4><b>Joël Gagnon</b></h4>
+                        <p>Chargé des opérations<span class="engineering-program">Génie mécanique</span></p>
                         <a href="#"><i class="fa fa-linkedin"></i></a> </div>
                     <div class="col-lg-3 centered"> <img class="img img-circle" src="img/team/default-user.png" height="120px" width="120px" alt="">
-                        <h4><b>Michele</b></h4>
-                        <p>Développement Web <span class="engineering-program">Génie logiciel</span></p>
+                        <h4><b>William Paradis</b></h4>
+                        <p>Chargé de la communication<span class="engineering-program">Génie construction</span></p>
                         <a href="#"><i class="fa fa-linkedin"></i></a> </div>
                     <div class="col-lg-3 centered "> <img class="img img-circle" src="img/team/default-user.png" height="120px" width="120px" alt="">
-                        <h4><b>Larry</b></h4>
-                        <p>Construction de la serre <span class="engineering-program">Génie construction</span></p>
-                        <a href="#"><i class="fa fa-linkedin"></i></a> </div>
-                    <div class="col-lg-3 centered lastrow"> <img class="img img-circle" src="img/team/default-user.png" height="120px" width="120px" alt="">
-                        <h4><strong>Alex</strong></h4>
-                        <p>Construction de la serre <span class="engineering-program">Génie de la production automatisée</span></p>
-                        <a href="#"><i class="fa fa-linkedin"></i></a> </div>
-                    <div class="col-lg-3 centered lastrow"> <img class="img img-circle" src="img/team/default-user.png" height="120px" width="120px" alt="">
-                        <h4><b>Sam</b></h4>
-                        <p>Construction de la serre <span class="engineering-program">Génie des opérations logistique</span></p>
-                        <a href="#"><i class="fa fa-linkedin"></i></a> </div>
-                    <div class="col-lg-3 centered lastrow"> <img class="img img-circle" src="img/team/default-user.png" height="120px" width="120px" alt="">
-                        <h4><b>Felix</b></h4>
-                        <p>Développement Web<span class="engineering-program">Génie des TI</span></p>
-                        <a href="#"><i class="fa fa-linkedin"></i></a> </div>
-                    <div class="col-lg-3 centered lastrow"> <img class="img img-circle" src="img/team/default-user.png" height="120px" width="120px" alt="">
-                        <h4><b>Tom</b></h4>
-                        <p>Construction de la serre <span class="engineering-program">Génie électrique</span></p>
+                        <h4><b>Philippe Connor</b></h4>
+                        <p>Construction de la serre <span class="engineering-program">Génie logiciel</span></p>
                         <a href="#"><i class="fa fa-linkedin"></i></a> </div>
 
+
+
+
+
+
+
+                    <div id="members-wrapper" style="display: none;">
+                        <div class="col-lg-3 centered lastrow"> <img class="img img-circle" src="img/team/default-user.png" height="120px" width="120px" alt="">
+                            <h4><strong>Alex</strong></h4>
+                            <p>Construction de la serre <span class="engineering-program">Génie de la production automatisée</span></p>
+                            <a href="#"><i class="fa fa-linkedin"></i></a> </div>
+                        <div class="col-lg-3 centered lastrow"> <img class="img img-circle" src="img/team/default-user.png" height="120px" width="120px" alt="">
+                            <h4><strong>Alex</strong></h4>
+                            <p>Construction de la serre <span class="engineering-program">Génie de la production automatisée</span></p>
+                            <a href="#"><i class="fa fa-linkedin"></i></a> </div>
+                        <div class="col-lg-3 centered lastrow"> <img class="img img-circle" src="img/team/default-user.png" height="120px" width="120px" alt="">
+                            <h4><strong>Alex</strong></h4>
+                            <p>Construction de la serre <span class="engineering-program">Génie de la production automatisée</span></p>
+                            <a href="#"><i class="fa fa-linkedin"></i></a> </div>
+                        <div class="col-lg-3 centered lastrow"> <img class="img img-circle" src="img/team/default-user.png" height="120px" width="120px" alt="">
+                            <h4><strong>Alex</strong></h4>
+                            <p>Construction de la serre <span class="engineering-program">Génie de la production automatisée</span></p>
+                            <a href="#"><i class="fa fa-linkedin"></i></a> </div>
+                        <div class="col-lg-3 centered lastrow"> <img class="img img-circle" src="img/team/default-user.png" height="120px" width="120px" alt="">
+                            <h4><strong>Alex</strong></h4>
+                            <p>Construction de la serre <span class="engineering-program">Génie de la production automatisée</span></p>
+                            <a href="#"><i class="fa fa-linkedin"></i></a> </div>
+                        <div class="col-lg-3 centered lastrow"> <img class="img img-circle" src="img/team/default-user.png" height="120px" width="120px" alt="">
+                            <h4><strong>Alex</strong></h4>
+                            <p>Construction de la serre <span class="engineering-program">Génie de la production automatisée</span></p>
+                            <a href="#"><i class="fa fa-linkedin"></i></a> </div>
+                        <div class="col-lg-3 centered lastrow"> <img class="img img-circle" src="img/team/default-user.png" height="120px" width="120px" alt="">
+                            <h4><strong>Alex</strong></h4>
+                            <p>Construction de la serre <span class="engineering-program">Génie de la production automatisée</span></p>
+                            <a href="#"><i class="fa fa-linkedin"></i></a> </div>
+                        <div class="col-lg-3 centered lastrow"> <img class="img img-circle" src="img/team/default-user.png" height="120px" width="120px" alt="">
+                            <h4><b>Sam</b></h4>
+                            <p>Construction de la serre <span class="engineering-program">Génie des opérations logistique</span></p>
+                            <a href="#"><i class="fa fa-linkedin"></i></a> </div>
+                        <div class="col-lg-3 centered lastrow"> <img class="img img-circle" src="img/team/default-user.png" height="120px" width="120px" alt="">
+                            <h4><b>Felix</b></h4>
+                            <p>Développement Web<span class="engineering-program">Génie des TI</span></p>
+                            <a href="#"><i class="fa fa-linkedin"></i></a> </div>
+                        <div class="col-lg-3 centered lastrow"> <img class="img img-circle" src="img/team/default-user.png" height="120px" width="120px" alt="">
+                            <h4><b>Tom</b></h4>
+                            <p>Construction de la serre <span class="engineering-program">Génie électrique</span></p>
+                            <a href="#"><i class="fa fa-linkedin"></i></a> </div>
+                    </div>
+                    <div class="col-lg-8 col-lg-offset-2 centered">
+                        <span id="see-more" style="display: block; cursor: pointer; text-align: center;"><i class="fa fa-angle-double-down"></i></span>
+                    </div>
                     <div class="col-lg-8 col-lg-offset-2 centered">
                         <p class="large">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
                     </div>
@@ -248,7 +283,62 @@
             </div>
             <!-- row --> 
         </div>
+        <!-- container -->
+
+
+
+
+        <!-- ==== RECRUTMENT ==== -->
+        <div id="enlisting" name="enlisting">
+            <div class="container">
+                <div class="row white">
+                    <h2 class="centered">RECRUTEMENT</h2>
+                    <hr>
+                    <div class="col-lg-8 col-lg-offset-2 centered">
+                        <p class="large">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+                    </div>
+                    <div class="col-lg-8 col-lg-offset-2 centered">
+                        <form id="contact" method="post" class="form" role="form">
+                            <div class="row">
+                                <div class="col-xs-6 col-md-6 form-group">
+                                    <input class="form-control" id="name" name="name" placeholder="Prénom" type="text" required />
+                                </div>
+                                <div class="col-xs-6 col-md-6 form-group">
+                                    <input class="form-control" id="email" name="email" placeholder="Nom" type="email" required />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-6 col-md-6 form-group">
+                                    <select class="form-control" id="sel1">
+                                        <option>Programme d'études</option>
+                                        <option>Génie construction</option>
+                                        <option>Génie mécanique</option>
+                                        <option>Génie Électrique</option>
+                                        <option>Génie production automatisée</option>
+                                        <option>Génie gestion des opérations</option>
+                                        <option>Génie logiciel</option>
+                                        <option>Génie technologie de l'information</option>
+                                    </select>
+                                </div>
+                                <div class="col-xs-6 col-md-6 form-group">
+                                    <input class="form-control" id="email" name="email" placeholder="Courriel" type="email" required />
+                                </div>
+                            </div>
+
+                            <textarea class="form-control" id="message" name="message" placeholder="Message" rows="5"></textarea>
+                            <div class="row">
+                                <div class="col-xs-12 col-md-12">
+                                    <button class="btn btn btn-lg" type="submit">Envoyer</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- row --> 
+            </div>
+        </div>
         <!-- container --> 
+
 
         <!-- ==== CONTACT ==== -->
         <div id="contact" name="contact">
@@ -265,7 +355,7 @@
                         <p>serreets@gmail.com</p>
                     </div>
                 </div>
-                <!--div class="row">
+                <div class="row">
                     <div class="col-lg-8 col-lg-offset-2 centered">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
                         <form id="contact" method="post" class="form" role="form">
@@ -277,6 +367,18 @@
                                     <input class="form-control" id="email" name="email" placeholder="Courriel" type="email" required />
                                 </div>
                             </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-md-12 form-group">
+                                    <select class="form-control" id="sel1">
+                                        <option>Sujet</option>
+                                        <option>Question</option>
+                                        <option>Partenariat</option>
+                                        <option>Financement</option>
+                                        <option>Recrutement</option>
+                                    </select>
+                                </div>
+                                
+                            </div>
                             <textarea class="form-control" id="message" name="message" placeholder="Message" rows="5"></textarea>
                             <div class="row">
                                 <div class="col-xs-12 col-md-12">
@@ -284,6 +386,8 @@
                                 </div>
                             </div>
                         </form>
+                    </div>
+                </div>
                 <!-- form --> 
             </div>
         </div-->
@@ -293,7 +397,19 @@
 </div>
 <!-- container -->
 
-<?php include "includes/footer.php"; ?>
+<?php include "includes/common_footer.php"; ?>
+<script>
+  $("#see-more").click(function () {
+      $("#members-wrapper").slideToggle("slow");
+      if ($("#see-more i").hasClass("fa-angle-double-down")) {
+          $("#see-more i").removeClass("fa-angle-double-down");
+          $("#see-more i").addClass("fa-angle-double-up");
+      } else if ($("#see-more i").hasClass("fa-angle-double-up")) {
+          $("#see-more i").removeClass("fa-angle-double-up");
+          $("#see-more i").addClass("fa-angle-double-down");
+      }
+  });
+</script>
 
 </body>
 </html>

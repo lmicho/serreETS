@@ -2,13 +2,13 @@
 <html lang="en">
 
     <?php $pageTable = 1; ?>
-    <?php include ("includes/head.php"); ?>
+    <?php include ("includes/common_head.php"); ?>
 
     <body>
 
         <div id="wrapper">
 
-            <?php include ("includes/header.php"); ?>
+            <?php include ("includes/common_header.php"); ?>
 
             <div id="page-wrapper">
 
@@ -352,7 +352,7 @@
         </div>
         <!-- /#wrapper -->
 
-        <?php include ("includes/footer.php"); ?>
+        <?php include ("includes/common_footer.php"); ?>
 
     </body>
 

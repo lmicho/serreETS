@@ -12,6 +12,7 @@
                     <li> <a href="#services" class="smoothScroll">Notre serre</a></li>
                     <li> <a href="#portfolio" class="smoothScroll">Nos projets</a></li>
                     <li> <a href="#team" class="smoothScroll">Notre équipe</a></li>
+                    <li> <a href="#enlisting" class="smoothScroll">Recrutement</a></li>
                     <li> <a href="#contact" class="smoothScroll">Contactez-nous</a></li>
                 </ul>
             </div>
