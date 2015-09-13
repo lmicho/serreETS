@@ -124,7 +124,7 @@
                         <!-- PORTFOLIO IMAGE 2 -->
                         <div class="col-md-4">
                             <div class="grid mask">
-                                <figure> <img class="img-responsive" src="img/portfolio/folio02.jpg" alt="">
+                                <figure> <img class="img-responsive" src="img/portfolio/folio01.jpg" alt="">
                                     <figcaption>
                                         <h5>CONCEPT</h5>
                                         <a data-toggle="modal" href="#myModal" class="btn btn-default">More Details</a> </figcaption>
@@ -138,7 +138,7 @@
                         <!-- PORTFOLIO IMAGE 3 -->
                         <div class="col-md-4">
                             <div class="grid mask">
-                                <figure> <img class="img-responsive" src="img/portfolio/folio03.jpg" alt="">
+                                <figure> <img class="img-responsive" src="img/portfolio/folio01.jpg" alt="">
                                     <figcaption>
                                         <h5>UX / UI</h5>
                                         <a data-toggle="modal" href="#myModal" class="btn btn-default">More Details</a> </figcaption>
@@ -155,7 +155,7 @@
                     <div class="row">
                         <div class="col-md-4 ">
                             <div class="grid mask">
-                                <figure> <img class="img-responsive" src="img/portfolio/folio04.jpg" alt="">
+                                <figure> <img class="img-responsive" src="img/portfolio/folio01.jpg" alt="">
                                     <figcaption>
                                         <h5>CONCEPT</h5>
                                         <a data-toggle="modal" href="#myModal" class="btn btn-default">More Details</a> </figcaption>
@@ -169,7 +169,7 @@
                         <!-- PORTFOLIO IMAGE 5 -->
                         <div class="col-md-4">
                             <div class="grid mask">
-                                <figure> <img class="img-responsive" src="img/portfolio/folio05.jpg" alt="">
+                                <figure> <img class="img-responsive" src="img/portfolio/folio01.jpg" alt="">
                                     <figcaption>
                                         <h5>UX / UI</h5>
                                         <a data-toggle="modal" href="#myModal" class="btn btn-default">More Details</a> </figcaption>
@@ -183,7 +183,7 @@
                         <!-- PORTFOLIO IMAGE 6 -->
                         <div class="col-md-4">
                             <div class="grid mask">
-                                <figure> <img class="img-responsive" src="img/portfolio/folio06.jpg" alt="">
+                                <figure> <img class="img-responsive" src="img/portfolio/folio01.jpg" alt="">
                                     <figcaption>
                                         <h5>CMS INTEGRATION</h5>
                                         <a data-toggle="modal" href="#myModal" class="btn btn-default">More Details</a> </figcaption>

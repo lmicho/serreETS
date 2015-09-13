@@ -12,7 +12,7 @@
     </div>
 
     <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
-    <?php include "includes/sidebar.php"; ?>
+    <?php include "includes/common_sidebar.php"; ?>
     
     <!-- /.navbar-collapse -->
 </nav>
