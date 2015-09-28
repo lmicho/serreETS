@@ -63,7 +63,7 @@
                     </div>
                 </div>
                 <!-- row --> 
-                <a href="dashboard/index.php" class="btn btn-lg">État de la serre</a>
+                <!--a href="../serreETS-client_web/" class="btn btn-lg">État de la serre</a-->
             </div>
         </div>
         <!-- container --> 
@@ -80,120 +80,30 @@
                 </div>
                 <!-- /row -->
                 <div class="container">
-                    <div class="row"> 
-
-                        <!-- PORTFOLIO IMAGE 1 -->
-                        <div class="col-md-4 ">
-                            <div class="grid mask">
-                                <figure> <img class="img-responsive" src="img/portfolio/folio01.jpg" alt="">
-                                    <figcaption>
-                                        <h5>UX / UI</h5>
-                                        <a data-toggle="modal" href="#myModal" class="btn btn-default">More Details</a> </figcaption>
-                                    <!-- /figcaption --> 
-                                </figure>
-                                <!-- /figure --> 
-                            </div>
-                            <!-- /grid-mask --> 
-                        </div>
-
-                        <!-- MODAL SHOW THE PORTFOLIO IMAGE. In this demo, all links point to this modal. You should create
-                                              a modal for each of your projects. -->
-
-                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                        <h4 class="modal-title">Project Title</h4>
-                                    </div>
-                                    <div class="modal-body">
-                                        <p><img class="img-responsive" src="img/portfolio/folio01-preview.jpg" alt=""></p>
-                                        <p>Lorem ipsum dolor sit amet, quo meis audire placerat eu, te eos porro veniam. An everti maiorum detracto mea. Eu eos dicam voluptaria, erant bonorum albucius et per, ei sapientem accommodare est. Saepe dolorum constituam ei vel</p>
-                                        <p><b><a href="#">Visit Site</a></b></p>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                    </div>
-                                </div>
-                                <!-- /.modal-content --> 
-                            </div>
-                            <!-- /.modal-dialog --> 
-                        </div>
-                        <!-- /.modal --> 
-
-                        <!-- PORTFOLIO IMAGE 2 -->
-                        <div class="col-md-4">
-                            <div class="grid mask">
-                                <figure> <img class="img-responsive" src="img/portfolio/folio01.jpg" alt="">
-                                    <figcaption>
-                                        <h5>CONCEPT</h5>
-                                        <a data-toggle="modal" href="#myModal" class="btn btn-default">More Details</a> </figcaption>
-                                    <!-- /figcaption --> 
-                                </figure>
-                                <!-- /figure --> 
-                            </div>
-                            <!-- /grid-mask --> 
-                        </div>
-
-                        <!-- PORTFOLIO IMAGE 3 -->
-                        <div class="col-md-4">
-                            <div class="grid mask">
-                                <figure> <img class="img-responsive" src="img/portfolio/folio01.jpg" alt="">
-                                    <figcaption>
-                                        <h5>UX / UI</h5>
-                                        <a data-toggle="modal" href="#myModal" class="btn btn-default">More Details</a> </figcaption>
-                                    <!-- /figcaption --> 
-                                </figure>
-                                <!-- /figure --> 
-                            </div>
-                            <!-- /grid-mask --> 
-                        </div>
-                    </div>
-                    <!-- /row --> 
-
-                    <!-- PORTFOLIO IMAGE 4 -->
                     <div class="row">
-                        <div class="col-md-4 ">
-                            <div class="grid mask">
-                                <figure> <img class="img-responsive" src="img/portfolio/folio01.jpg" alt="">
-                                    <figcaption>
-                                        <h5>CONCEPT</h5>
-                                        <a data-toggle="modal" href="#myModal" class="btn btn-default">More Details</a> </figcaption>
-                                    <!-- /figcaption --> 
-                                </figure>
-                                <!-- /figure --> 
-                            </div>
-                            <!-- /grid-mask --> 
-                        </div>
+                        <div class="clearfix">
+                            <?php
+                            $string = file_get_contents("data/projets.json");
+                            $json_a = json_decode($string, true);
+                            foreach ($json_a as $project_name => $project_a) {
+                              ?>
 
-                        <!-- PORTFOLIO IMAGE 5 -->
-                        <div class="col-md-4">
-                            <div class="grid mask">
-                                <figure> <img class="img-responsive" src="img/portfolio/folio01.jpg" alt="">
-                                    <figcaption>
-                                        <h5>UX / UI</h5>
-                                        <a data-toggle="modal" href="#myModal" class="btn btn-default">More Details</a> </figcaption>
-                                    <!-- /figcaption --> 
-                                </figure>
-                                <!-- /figure --> 
-                            </div>
-                            <!-- /grid-mask --> 
-                        </div>
 
-                        <!-- PORTFOLIO IMAGE 6 -->
-                        <div class="col-md-4">
-                            <div class="grid mask">
-                                <figure> <img class="img-responsive" src="img/portfolio/folio01.jpg" alt="">
-                                    <figcaption>
-                                        <h5>CMS INTEGRATION</h5>
-                                        <a data-toggle="modal" href="#myModal" class="btn btn-default">More Details</a> </figcaption>
-                                    <!-- /figcaption --> 
-                                </figure>
-                                <!-- /figure --> 
-                            </div>
-                            <!-- /grid-mask --> 
+                              <div class="col-md-4 ">
+                                  <div class="grid mask">
+                                      <figure> 
+                                          <a href="<?php echo $project_a['url']; ?>">
+                                              <img class="img-responsive" src="img/portfolio/folio01.jpg" title="<?php echo $project_name; ?>" alt="<?php echo $project_name; ?>" />
+                                          </a>
+                                      </figure>
+                                      <!-- /figure --> 
+                                  </div>
+                                  <!-- /grid-mask --> 
+                              </div>
+                              <?php
+                            }
+                            ?>
                         </div>
-                        <!-- /col --> 
                     </div>
                     <!-- /row --> 
                 </div>
@@ -208,70 +118,40 @@
                 <div class="row centered">
                     <h2 class="centered">NOTRE ÉQUIPE</h2>
                     <hr>
-                    <div class="col-lg-3 centered"> <img class="img img-circle" src="img/team/default-user.png" height="120px" width="120px" alt="">
-                        <h4><strong>Marc-Antoine Meilleur</strong></h4>
-                        <p>Chargé des opérations<span class="engineering-program">Génie mécanique</span></p>
-                        <a href="#"><i class="fa fa-linkedin"></i></a> </div>
-                    <div class="col-lg-3 centered"> <img class="img img-circle" src="img/team/default-user.png" height="120px" width="120px" alt="">
-                        <h4><b>Joël Gagnon</b></h4>
-                        <p>Chargé des opérations<span class="engineering-program">Génie mécanique</span></p>
-                        <a href="#"><i class="fa fa-linkedin"></i></a> </div>
-                    <div class="col-lg-3 centered"> <img class="img img-circle" src="img/team/default-user.png" height="120px" width="120px" alt="">
-                        <h4><b>William Paradis</b></h4>
-                        <p>Chargé de la communication<span class="engineering-program">Génie construction</span></p>
-                        <a href="#"><i class="fa fa-linkedin"></i></a> </div>
-                    <div class="col-lg-3 centered "> <img class="img img-circle" src="img/team/default-user.png" height="120px" width="120px" alt="">
-                        <h4><b>Philippe Connor</b></h4>
-                        <p>Construction de la serre <span class="engineering-program">Génie logiciel</span></p>
-                        <a href="#"><i class="fa fa-linkedin"></i></a> </div>
 
-
-
-
-
-
-
-                    <div id="members-wrapper" style="display: none;">
-                        <div class="col-lg-3 centered lastrow"> <img class="img img-circle" src="img/team/default-user.png" height="120px" width="120px" alt="">
-                            <h4><strong>Alex</strong></h4>
-                            <p>Construction de la serre <span class="engineering-program">Génie de la production automatisée</span></p>
-                            <a href="#"><i class="fa fa-linkedin"></i></a> </div>
-                        <div class="col-lg-3 centered lastrow"> <img class="img img-circle" src="img/team/default-user.png" height="120px" width="120px" alt="">
-                            <h4><strong>Alex</strong></h4>
-                            <p>Construction de la serre <span class="engineering-program">Génie de la production automatisée</span></p>
-                            <a href="#"><i class="fa fa-linkedin"></i></a> </div>
-                        <div class="col-lg-3 centered lastrow"> <img class="img img-circle" src="img/team/default-user.png" height="120px" width="120px" alt="">
-                            <h4><strong>Alex</strong></h4>
-                            <p>Construction de la serre <span class="engineering-program">Génie de la production automatisée</span></p>
-                            <a href="#"><i class="fa fa-linkedin"></i></a> </div>
-                        <div class="col-lg-3 centered lastrow"> <img class="img img-circle" src="img/team/default-user.png" height="120px" width="120px" alt="">
-                            <h4><strong>Alex</strong></h4>
-                            <p>Construction de la serre <span class="engineering-program">Génie de la production automatisée</span></p>
-                            <a href="#"><i class="fa fa-linkedin"></i></a> </div>
-                        <div class="col-lg-3 centered lastrow"> <img class="img img-circle" src="img/team/default-user.png" height="120px" width="120px" alt="">
-                            <h4><strong>Alex</strong></h4>
-                            <p>Construction de la serre <span class="engineering-program">Génie de la production automatisée</span></p>
-                            <a href="#"><i class="fa fa-linkedin"></i></a> </div>
-                        <div class="col-lg-3 centered lastrow"> <img class="img img-circle" src="img/team/default-user.png" height="120px" width="120px" alt="">
-                            <h4><strong>Alex</strong></h4>
-                            <p>Construction de la serre <span class="engineering-program">Génie de la production automatisée</span></p>
-                            <a href="#"><i class="fa fa-linkedin"></i></a> </div>
-                        <div class="col-lg-3 centered lastrow"> <img class="img img-circle" src="img/team/default-user.png" height="120px" width="120px" alt="">
-                            <h4><strong>Alex</strong></h4>
-                            <p>Construction de la serre <span class="engineering-program">Génie de la production automatisée</span></p>
-                            <a href="#"><i class="fa fa-linkedin"></i></a> </div>
-                        <div class="col-lg-3 centered lastrow"> <img class="img img-circle" src="img/team/default-user.png" height="120px" width="120px" alt="">
-                            <h4><b>Sam</b></h4>
-                            <p>Construction de la serre <span class="engineering-program">Génie des opérations logistique</span></p>
-                            <a href="#"><i class="fa fa-linkedin"></i></a> </div>
-                        <div class="col-lg-3 centered lastrow"> <img class="img img-circle" src="img/team/default-user.png" height="120px" width="120px" alt="">
-                            <h4><b>Felix</b></h4>
-                            <p>Développement Web<span class="engineering-program">Génie des TI</span></p>
-                            <a href="#"><i class="fa fa-linkedin"></i></a> </div>
-                        <div class="col-lg-3 centered lastrow"> <img class="img img-circle" src="img/team/default-user.png" height="120px" width="120px" alt="">
-                            <h4><b>Tom</b></h4>
-                            <p>Construction de la serre <span class="engineering-program">Génie électrique</span></p>
-                            <a href="#"><i class="fa fa-linkedin"></i></a> </div>
+                    <div class="clearfix">
+                        <?php
+                        $string = file_get_contents("data/membres.json");
+                        $json_a = json_decode($string, true);
+                        foreach ($json_a as $person_name => $person_a) {
+                          if ($person_a['front'] == "true") {
+                            ?>
+                            <div class="col-lg-3 centered">
+                                <img class="img img-circle" src="img/team/default-user.png" height="120px" width="120px" alt="">
+                                <h4><strong><?php echo $person_name; ?></strong></h4>
+                                <p><?php echo $person_a['role']; ?></p>
+                            </div>
+                            <?php
+                          }
+                        }
+                        ?>
+                    </div>
+                    <div id="members-wrapper" class="clearfix" style="display: none;">
+                        <?php
+                        $string = file_get_contents("data/membres.json");
+                        $json_a = json_decode($string, true);
+                        foreach ($json_a as $person_name => $person_a) {
+                          if ($person_a['front'] == "false") {
+                            ?>
+                            <div class="col-lg-3 centered">
+                                <img class="img img-circle" src="img/team/default-user.png" height="120px" width="120px" alt="">
+                                <h4><strong><?php echo $person_name; ?></strong></h4>
+                                <p><?php echo $person_a['role']; ?></p>
+                            </div>
+                            <?php
+                          }
+                        }
+                        ?>
                     </div>
                     <div class="col-lg-8 col-lg-offset-2 centered">
                         <span id="see-more" style="display: block; cursor: pointer; text-align: center;"><i class="fa fa-angle-double-down"></i></span>
@@ -285,9 +165,6 @@
         </div>
         <!-- container -->
 
-
-
-
         <!-- ==== RECRUTMENT ==== -->
         <div id="enlisting" name="enlisting">
             <div class="container">
@@ -298,22 +175,23 @@
                         <p class="large">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
                     </div>
                     <div class="col-lg-8 col-lg-offset-2 centered">
-                        <form id="contact" method="post" class="form" role="form">
+
+                        <form id="enlisting" method="post" class="form" role="form" action="<?php echo $_SERVER['PHP_SELF']; ?>">
                             <div class="row">
                                 <div class="col-xs-6 col-md-6 form-group">
-                                    <input class="form-control" id="name" name="name" placeholder="Prénom" type="text" required />
+                                    <input class="form-control" id="firstName" name="firstName" placeholder="Prénom" type="text" required />
                                 </div>
                                 <div class="col-xs-6 col-md-6 form-group">
-                                    <input class="form-control" id="email" name="email" placeholder="Nom" type="email" required />
+                                    <input class="form-control" id="lastName" name="lastName" placeholder="Nom" type="text" required />
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-xs-6 col-md-6 form-group">
-                                    <select class="form-control" id="sel1">
+                                    <select class="form-control" id="program" name="program">
                                         <option>Programme d'études</option>
                                         <option>Génie construction</option>
                                         <option>Génie mécanique</option>
-                                        <option>Génie Électrique</option>
+                                        <option>Génie électrique</option>
                                         <option>Génie production automatisée</option>
                                         <option>Génie gestion des opérations</option>
                                         <option>Génie logiciel</option>
@@ -328,8 +206,49 @@
                             <textarea class="form-control" id="message" name="message" placeholder="Message" rows="5"></textarea>
                             <div class="row">
                                 <div class="col-xs-12 col-md-12">
-                                    <button class="btn btn btn-lg" type="submit">Envoyer</button>
+                                    <button class="btn btn btn-lg" type="submit" name="enlisting-submit">Envoyer</button>
                                 </div>
+                            </div>
+                            <div class="row">
+                                <?php
+                                //if "email" variable is filled out, send email
+                                if (isset($_POST['enlisting-submit'])) {
+
+                                  //Email information
+                                  $admin_email = "lauriane.b.michaud@gmail.com";
+
+                                  //subject
+                                  $subject = 'Recrutement SerreETS';
+
+                                  // message
+                                  $firstName = @trim(stripslashes($_POST['firstName']));
+                                  $lastName = @trim(stripslashes($_POST['lastName']));
+                                  $program = @trim(stripslashes($_POST['program']));
+                                  $email = @trim(stripslashes($_POST['email']));
+                                  $message2 = @trim(stripslashes($_POST['message']));
+
+                                  $message = '
+                                  <html>
+                                  <body>
+                                    <p>Une nouvelle personne est intéressée à faire partie du club.</p><br />
+                                    <p>Nom : ' . $firstName . ' ' . $lastName . '</p>
+                                    <p>Programme d\'études : ' . $program . '</p>
+                                    <p>Courriel : ' . $email . '</p>
+                                    <p>Message : ' . $message2 . '</p>
+                                  </body>
+                                  </html>';
+
+                                  // To send HTML mail, the Content-type header must be set
+                                  $headers = 'MIME-Version: 1.0' . "\r\n";
+                                  $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+
+                                  //send email
+                                  mail($admin_email, $subject, $message, $headers);
+
+                                  //Email response
+                                  echo '<p>Votre message a bien été envoyé. Merci.</p>';
+                                }
+                                ?>
                             </div>
                         </form>
                     </div>
@@ -358,18 +277,18 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2 centered">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
-                        <form id="contact" method="post" class="form" role="form">
+                        <form id="contact" method="post" class="form" role="form" action="<?php echo $_SERVER['PHP_SELF']; ?>">
                             <div class="row">
                                 <div class="col-xs-6 col-md-6 form-group">
                                     <input class="form-control" id="name" name="name" placeholder="Nom" type="text" required />
                                 </div>
                                 <div class="col-xs-6 col-md-6 form-group">
-                                    <input class="form-control" id="email" name="email" placeholder="Courriel" type="email" required />
+                                    <input class="form-control" id="email" name="email2" placeholder="Courriel" type="email" required />
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-xs-12 col-md-12 form-group">
-                                    <select class="form-control" id="sel1">
+                                    <select class="form-control" id="sel1" name="subject">
                                         <option>Sujet</option>
                                         <option>Question</option>
                                         <option>Partenariat</option>
@@ -377,13 +296,49 @@
                                         <option>Recrutement</option>
                                     </select>
                                 </div>
-                                
+
                             </div>
-                            <textarea class="form-control" id="message" name="message" placeholder="Message" rows="5"></textarea>
+                            <textarea class="form-control" id="message" name="message2" placeholder="Message" rows="5"></textarea>
                             <div class="row">
                                 <div class="col-xs-12 col-md-12">
-                                    <button class="btn btn btn-lg" type="submit">Envoyer</button>
+                                    <button class="btn btn btn-lg" type="submit" name="contactus-submit">Envoyer</button>
                                 </div>
+                            </div>
+                            <div class="row">
+
+                                <?php
+                                //if "email" variable is filled out, send email
+                                if (isset($_POST['contactus-submit'])) {
+
+                                  //Email information
+                                  $admin_email = "lauriane.b.michaud@gmail.com";
+
+                                  // message
+                                  $name = @trim(stripslashes($_POST['name']));
+                                  $email = @trim(stripslashes($_POST['email2']));
+                                  $subject = @trim(stripslashes($_POST['subject']));
+                                  $message2 = @trim(stripslashes($_POST['message2']));
+
+                                  $message = '
+                                    <html>
+                                    <body>
+                                      <p>' . $message2 . '</p>
+                                      <p>De : ' . $name . '</p>
+                                      <p>Courriel : ' . $email . '</p>
+                                    </body>
+                                    </html>';
+
+                                  // To send HTML mail, the Content-type header must be set
+                                  $headers = 'MIME-Version: 1.0' . "\r\n";
+                                  $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+
+                                  //send email
+                                  mail($admin_email, $subject, $message, $headers);
+
+                                  //Email response
+                                  echo '<br /><p>Votre message a bien été envoyé. Merci.</p>';
+                                }
+                                ?>
                             </div>
                         </form>
                     </div>
@@ -401,13 +356,7 @@
 <script>
   $("#see-more").click(function () {
       $("#members-wrapper").slideToggle("slow");
-      if ($("#see-more i").hasClass("fa-angle-double-down")) {
-          $("#see-more i").removeClass("fa-angle-double-down");
-          $("#see-more i").addClass("fa-angle-double-up");
-      } else if ($("#see-more i").hasClass("fa-angle-double-up")) {
-          $("#see-more i").removeClass("fa-angle-double-up");
-          $("#see-more i").addClass("fa-angle-double-down");
-      }
+      $("#see-more i").hide();
   });
 </script>
 

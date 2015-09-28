@@ -325,19 +325,26 @@ a:before, a:after {
 #portfolio .btn-default {
     border: 0;
 }
-#contact {
+#enlisting {
     background: #fff;
+    padding: 60px 0;
+}
+#enlisting H4 {
+    padding-top: 10px;
+}
+#contact {
+    background: #f5f5f5;
     padding: 60px 0;
     text-align: center;
 }
-#contact .form {
+#contact .form , #enlisting .form{
     padding: 30px 0;
 }
-#contact .fa {
+#contact .fa, #enlisting .fa {
     color: #a0bb2e;
     margin-bottom: 10px;
 }
-#contact .btn, #services .btn{
+#contact .btn, #services .btn, #enlisting .btn{
     font-weight: 500;
     font-size: 18px;
     margin-top: 50px;
@@ -345,7 +352,7 @@ a:before, a:after {
     color: #fff;
     border: 0;
 }
-#contact .btn:hover, #contact .btn:focus, #services .btn:hover, #services .btn:focus{
+#contact .btn:hover, #contact .btn:focus, #services .btn:hover, #services .btn:focus, #enlisting .btn:hover, #enlisting .btn:focus{
     background-color: #7f9817;
     outline: 0px;
 }
