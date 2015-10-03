@@ -208,7 +208,7 @@ a:before, a:after {
 
 #headerwrap {
     background: url(../img/header_bg.jpg) no-repeat center top;
-    padding-top: 150px;
+    padding-top: 250px;
     text-align: center;
     background-attachment: relative;
     background-position: center center;
@@ -239,6 +239,9 @@ a:before, a:after {
     text-align: center;
     letter-spacing: 1px;
     text-shadow: 1px 10px 10px #151515;
+}
+.navbar-inverse a img{
+    background-color:transparent;
 }
 #headerwrap .icon {
     color: #ffffff;

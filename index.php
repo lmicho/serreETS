@@ -10,7 +10,6 @@
         <!-- ==== HEADERWRAP ==== -->
         <div id="headerwrap" name="home" id="home">
             <header class="clearfix">
-                <img src="img/logo_small.png" alt="serreÉTS" width="150" height="196" />
                 <h1>Le génie du développement durable</h1>
                 <p>Lorem ipsum dolor sit amet, cu menandri molestiae voluptaria eam,<br>
                     invidunt reprehendunt nec ei. Sonet regione consulatu vel id.
@@ -95,7 +94,7 @@
                               <div class="col-md-4 ">
                                   <div class="grid mask">
                                       <figure> 
-                                          <a href="<?php echo $project_a['url']; ?>">
+                                          <a href="projets/<?php echo $project_a['url']; ?>">
                                               <img class="img-responsive" src="img/portfolio/folio01.jpg" title="<?php echo $project_name; ?>" alt="<?php echo $project_name; ?>" />
                                           </a>
                                       </figure>

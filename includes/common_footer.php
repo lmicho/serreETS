@@ -8,7 +8,7 @@
                     <li><a href="https://github.com/SerreETS" target="_blank"><i class="fa fa-github"></i></a> </li>
                 </ul>
             </div>
-            <div class="col-md-4"> <span class="sponsors">Commanditaire</span> <img src="img/ets_logo_footer.png" width="105" height="66" alt="École de Technologie supérieure"></div>
+            <div class="col-md-4"> <span class="sponsors">Commanditaire</span> <img src="<?php echo $actual_link; ?>/img/ets_logo_footer.png" width="105" height="66" alt="École de Technologie supérieure"></div>
         </div>
     </div>
 </div>
@@ -17,8 +17,8 @@
     ================================================== --> 
 <!-- Placed at the end of the document so the pages load faster --> 
 
-<script type="text/javascript" src="js/bootstrap.min.js"></script> 
-<script type="text/javascript" src="js/retina.js"></script> 
-<script type="text/javascript" src="js/jquery.easing.1.3.js"></script> 
-<script type="text/javascript" src="js/smoothscroll.js"></script> 
-<script type="text/javascript" src="js/jquery-func.js"></script>
+<script type="text/javascript" src="<?php echo $actual_link; ?>/js/bootstrap.min.js"></script> 
+<script type="text/javascript" src="<?php echo $actual_link; ?>/js/retina.js"></script> 
+<script type="text/javascript" src="<?php echo $actual_link; ?>/js/jquery.easing.1.3.js"></script> 
+<script type="text/javascript" src="<?php echo $actual_link; ?>/js/smoothscroll.js"></script> 
+<script type="text/javascript" src="<?php echo $actual_link; ?>/js/jquery-func.js"></script>
