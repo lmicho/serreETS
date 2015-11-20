@@ -206,7 +206,7 @@ a:before, a:after {
    Wrap Sections
    ========================================================================== */
 
-#headerwrap {
+.headerwrap {
     background: url(../img/header_bg.jpg) no-repeat center top;
     padding-top: 250px;
     text-align: center;
@@ -224,7 +224,7 @@ a:before, a:after {
     background-size: cover;
     padding-bottom: 100px;
 }
-#headerwrap h1 {
+.headerwrap h1 {
     color: #fff;
     font-size: 50px;
     font-weight: 400;
@@ -232,7 +232,7 @@ a:before, a:after {
     letter-spacing: 3px;
     text-shadow: 1px 10px 10px #151515;
 }
-#headerwrap p {
+.headerwrap p {
     color: #fff;
     font-size: 22px;
     font-weight: 300;
@@ -243,7 +243,7 @@ a:before, a:after {
 .navbar-inverse a img{
     background-color:transparent;
 }
-#headerwrap .icon {
+.headerwrap .icon {
     color: #ffffff;
     margin-top: 90px;
     padding-bottom: 30px;
@@ -252,7 +252,7 @@ a:before, a:after {
     font-weight: bold;
     text-shadow: 0px 20px 7px #3da8ae;
 }
-#headerwrap .btn{
+.headerwrap .btn{
     font-weight: 500;
     font-size: 20px;
     margin: 50px 0;
@@ -262,7 +262,7 @@ a:before, a:after {
     box-shadow: -5px -5px 20px #5b6e0e;
     border: 0;
 }
-#headerwrap .btn:hover, #headerwrap .btn:focus{
+.headerwrap .btn:hover, .headerwrap .btn:focus{
     background-color: #7f9817;
     outline: 0px;
 }
@@ -559,10 +559,10 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 }
 
 @media screen and (max-width:769px) {
-    #headerwrap h1 {
+    .headerwrap h1 {
         font-size: 80px;
     }
-    #headerwrap p {
+    .headerwrap p {
         font-size: 30px;
         line-height: 38px;
     }
